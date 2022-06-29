@@ -1,0 +1,37 @@
+@import "_vars";
+
+.about {
+  background-color: @white;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+  @media @mobile {
+    padding-bottom: 1rem;
+  }
+  // .about__inner
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    @media @notebook {
+      flex-direction: column;
+    }
+  }
+
+  // .about__content
+
+  &__content {
+    max-width: 65rem;
+    @media @notebook {
+      margin-bottom: 2rem;
+    }
+  }
+
+  // .about__video
+
+  &__photo {
+    max-width: 43rem;
+    @media @notebook {
+      order: -1;
+    }
+  }
+}

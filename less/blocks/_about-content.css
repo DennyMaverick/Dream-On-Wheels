@@ -1,0 +1,14 @@
+.about-content__text {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #D91506;
+}
+.about-content__text + .about-content__text {
+  margin-top: 2rem;
+}
+.about-content__title {
+  font-family: 'lobster';
+  color: #010101;
+  text-align: left;
+  margin-bottom: 6rem;
+}

@@ -1,0 +1,79 @@
+@import "_vars";
+
+.intro {
+  position: relative;
+  padding-top: 14.5rem;
+  padding-bottom: 4.5rem;
+  background-color: @gray;
+  background-image: url("../img/bg/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media @notebook {
+    padding-top: 65%;
+  }
+  @media @mobile-sm {
+    padding-top: calc(69% + 40px);
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 2;
+    background-image: linear-gradient(
+      1.46deg,
+      rgb(211, 47, 11, 0.9) 0%,
+      rgba(44, 35, 33, 0) 90%,
+      rgba(44, 35, 33, 0) 100%
+    );
+  }
+  @media @mobile {
+    padding-bottom: 2rem;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 10;
+  }
+  // .intro__inner
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    @media @notebook {
+      flex-direction: column;
+    }
+  }
+
+  // .intro__content
+
+  &__content + * {
+    @media @notebook {
+      margin-top: 5rem;
+    }
+  }
+
+  // .intro__content-title
+
+  &__content-title {
+    font-family: "lobster";
+    font-size: 6rem;
+    line-height: 0.8;
+    text-shadow: 1px 1px 10px #ff5722;
+    color: @black;
+    font-weight: 400;
+    margin-bottom: 4rem;
+    @media @mobile {
+      font-size: 4rem;
+    }
+    @media @mobile-lower {
+      font-size: 3rem;
+    }
+  }
+
+  &__photo-image {
+    object-fit: cover;
+  }
+}

@@ -1,0 +1,17 @@
+@import './_vars';
+.main {
+  position: relative;
+  &__photo {
+    position: absolute;
+    top: 137px;
+    right: 30px;
+    z-index: 10;
+    max-width: 60%;
+    max-width: 786px;
+    @media @notebook {
+      top: 99px;
+      max-width: 100%;
+    }
+  }
+
+}

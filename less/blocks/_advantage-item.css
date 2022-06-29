@@ -1,0 +1,22 @@
+.advantage-item {
+  display: flex;
+}
+.advantage-item__image {
+  transform: rotate(90deg);
+  width: 17px;
+  height: 17px;
+  fill: #C74F33;
+}
+.advantage-item__icon {
+  flex-shrink: 0;
+  position: relative;
+  top: 0.4rem;
+  display: flex;
+  margin-right: 1rem;
+}
+.advantage-item__text {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #D91506;
+  max-width: 52.8rem;
+}

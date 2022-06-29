@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "lobster";
+  src: url("../font/Lobster-Regular.eot");
+  src: url("../font/Lobster-Regular.eot?#iefix") format("embedded-opentype"), url("../font/Lobster-Regular.woff2") format("woff2"), url("../font/Lobster-Regular.woff") format("woff"), url("../font/Lobster-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

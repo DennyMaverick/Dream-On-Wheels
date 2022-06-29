@@ -1,0 +1,29 @@
+@import "_vars";
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    // width: 1180px;
+    @media @notebook {
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+    }
+        @media @mobile {
+            padding-right:  1rem;
+            padding-left: 1rem;
+        }
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.all-content {
+    margin-left: 0;
+    transition: margin-left .3s ease-in;
+    &--replace {
+        margin-left: -800px;
+    }
+}

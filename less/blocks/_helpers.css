@@ -1,0 +1,17 @@
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.center {
+  text-align: center;
+}
+.m-right-0 {
+  margin-right: 0;
+}
+.hidden {
+  display: none;
+}
+.no-scroll {
+  overflow: hidden;
+}

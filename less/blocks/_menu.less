@@ -1,0 +1,22 @@
+@import "./_vars";
+
+.menu {
+  &__item {
+    text-transform: capitalize;
+    color: @white;
+    font-size: 25px;
+    font-family: "lobster", sans-serif;
+    max-width: 260px;
+    cursor: pointer;
+    position: relative;
+    transform: translateX(0);
+    transition: transform .3s ease-in;
+    &:hover {
+      text-decoration: none;
+      transform: translateX(15px);
+    }
+    & + & {
+      margin-top: 10px;
+    }
+  }
+}

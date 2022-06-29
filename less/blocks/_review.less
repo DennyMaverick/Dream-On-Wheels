@@ -1,0 +1,58 @@
+@import "./_vars";
+
+.review {
+  &__image {
+    object-fit: cover;
+  }
+  // .review__pic
+  &__pic {
+    margin-right: 2.5rem;
+    @media @mobile-sm {
+      & + * {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  // .review__avatar
+
+  &__avatar {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+  }
+
+  // .review__text
+  &__text {
+    margin-bottom: 3rem;
+  }
+
+  &__quote {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 1.5rem;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-style: italic;
+    color: @review-text-color;
+    background-color:@darkwine;
+    border-radius: 5px;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 2.5rem;
+      left: -1.9rem;
+      width: 0;
+      height: 0;
+      border: 10px solid transparent;
+      border-right-color: @darkwine;
+    }
+  }
+  &__author {
+    display: block;
+    margin-top: auto;
+    color: @white;
+  }
+}

@@ -1,0 +1,23 @@
+@import "./_vars";
+.advantage-item {
+  display: flex;
+  &__image {
+    transform: rotate(90deg);
+    width: 17px;
+    height: 17px;
+    fill: @arrow-color;
+  }
+  &__icon {
+    flex-shrink: 0;
+    position: relative;
+    top: 0.4rem;
+    display: flex;
+    margin-right: 1rem;
+  }
+  &__text {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: @orange;
+    max-width: 52.8rem;
+  }
+}

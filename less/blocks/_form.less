@@ -1,0 +1,49 @@
+@import "./_vars";
+
+.form {
+  // .form__input
+
+  &__input {
+    height: 4rem;
+  }
+
+  // .form__textarea
+
+  &__textarea {
+    resize: none;
+    height: 17rem;
+  }
+  &__input,
+  &__textarea {
+    max-width: 50rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: @darkgray;
+    border: none;
+    outline: 2px solid transparent;
+    transition: outline .4s ease-in;
+    &:focus {
+      outline: 2px solid @form-bg-color;
+    }
+    &::placeholder {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: @gray;
+    }
+  }
+  // .form__btn
+
+  &__btn {
+    font-size: 1.6rem;
+    color: @gray;
+    width: 14rem;
+    height: 4rem;
+    align-self: center;
+    padding: 10px;
+    border: none;
+  }
+}

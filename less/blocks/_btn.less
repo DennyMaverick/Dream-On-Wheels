@@ -1,0 +1,23 @@
+@import "./_vars";
+
+.btn {
+  display: inline-block;
+  background-color: @white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: 700;
+  color: @gray;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s background ease-in, 0.3s color ease-in;
+  &:hover {
+    text-decoration: none;
+    background: @btn-bg-color;
+    color: @btn-color;
+  }
+}

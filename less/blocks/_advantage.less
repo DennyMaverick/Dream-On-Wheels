@@ -1,0 +1,38 @@
+@import "_vars";
+
+.advantage {
+  background-color: @white;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+  // .advantage__title
+
+  &__title {
+    font-family: 'lobster';
+    text-align: center;
+    margin-bottom: 6rem;
+    color: @black;
+    @media @notebook {
+      text-align: left;
+    }
+    @media @mobile-lower {
+      font-size: 2.7rem;
+    }
+  }
+
+  // .advantage__items
+
+  &__items {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px 20px;
+    @media @notebook {
+      grid-template-columns: 100%;
+    }
+  }
+
+  // .advantage__item
+
+  &__item {
+    display: flex;
+  }
+}

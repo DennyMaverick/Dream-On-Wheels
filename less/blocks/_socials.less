@@ -1,0 +1,45 @@
+@import "./_vars";
+
+.socials {
+  // .socials__item
+
+  // .socials__icon
+
+  &__icon {
+    color: @gray;
+    font-size: 1.7rem;
+    font-weight: 700;
+    transition: color 0.3s ease-in;
+  }
+  &__link {
+    margin: auto;
+  }
+  &__item {
+    cursor: pointer;
+    display: flex;
+    width: 4.4rem;
+    height: 4.4rem;
+    background-color: @white;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    transition: box-shadow .3s ease-in;
+    &:hover {
+      box-shadow: 0px 0px 5px @social-bg;
+    }
+    &:hover .socials__icon {
+      color: @social-bg-icon;
+    }
+    &:hover .socials__text {
+      color: @social-bg;
+    }
+  }
+
+  &__text {
+    margin: auto;
+    color: @gray;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    transition: color 0.3s ease-in;
+  }
+}

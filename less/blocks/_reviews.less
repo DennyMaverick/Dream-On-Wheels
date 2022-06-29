@@ -1,0 +1,43 @@
+@import "_vars";
+
+.reviews {
+  background-color: @white;
+  // background-color: @lightwhite;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+  // .reviews__title
+
+  &__title {
+    font-family: 'lobster';
+    color: @black;
+    text-align: center;
+    margin-bottom: 6rem;
+    @media @mobile-sm {
+      text-align: left;
+    }
+  }
+
+  // .reviews__items
+
+  &__items {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media @notebook {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    max-width: 55.5rem;
+    @media @mobile-sm {
+      flex-direction: column;
+    }
+    @media @mobile-sm {
+      align-items: center;
+    }
+  }
+}
