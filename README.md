@@ -1,6 +1,6 @@
 # DREAM ON WHEELS — МЕЧТА НА КОЛЕСАХ
 
-![dream on wheels](https://github.com/DennyMaverick/Archee/raw/main/src/img/img-for-readme/slide-1.gif)
+![dream on wheels](https://github.com/DennyMaverick/Dream-On-Wheels/raw/main/img/img-for-readme/slide-1.gif)
 
 Проект "Мечта на колесах" или "Dream On Wheels" был создан в учебных целях, чтобы закрепить навыки работы с gulp и препроцессором LESS.
 
