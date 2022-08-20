@@ -5,6 +5,8 @@ module.exports = [
   "./gulp/tasks/html",
   "./gulp/tasks/css",
   "./gulp/tasks/scripts",
+  "./gulp/tasks/jslibs",
+  "./gulp/tasks/jquerylib",
   "./gulp/tasks/allimg",
   "./gulp/tasks/images",
   "./gulp/tasks/svg",
@@ -12,4 +14,4 @@ module.exports = [
   "./gulp/tasks/copy",
   "./gulp/tasks/clean",
   "./gulp/tasks/build",
-];
+]

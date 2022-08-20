@@ -5,7 +5,7 @@ module.exports = function () {
   const less = require("gulp-less");
   $.gulp.task("less", function () {
     return $.gulp
-      .src(["less/**/*.less", "!less/**/_*.less"])
+      .src(["less/style.less"])
       .pipe(
         $.gp.plumber({
           errorHandler: $.gp.notify.onError((error) => ({
@@ -28,6 +28,6 @@ module.exports = function () {
       .pipe($.gp.sourcemaps.write(""))
       .pipe($.gulp.dest("build/css"))
       .on("end", $.browserSync.reload)
-      .pipe($.browserSync.stream());
+      .pipe($.browserSync.stream())
   });
 };

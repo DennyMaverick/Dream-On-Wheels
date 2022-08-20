@@ -4,7 +4,6 @@
   background-color: @white;
   // background-color: @lightwhite;
   padding-top: 4.5rem;
-  padding-bottom: 4.5rem;
   // .reviews__title
 
   &__title {
@@ -17,27 +16,21 @@
     }
   }
 
-  // .reviews__items
-
-  &__items {
-    display: flex;
-    align-items: flex-start;
-    gap: 3rem 2rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    @media @notebook {
-      justify-content: center;
-    }
-  }
-
   &__item {
     display: flex;
+    margin: auto;
     max-width: 55.5rem;
+    padding: 2rem 0 4.5rem;
     @media @mobile-sm {
       flex-direction: column;
     }
     @media @mobile-sm {
       align-items: center;
     }
+  }
+  &__wrapper {
+    max-width: 768px;
+    margin: 0 auto;
+    position: relative;
   }
 }

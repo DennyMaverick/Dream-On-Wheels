@@ -5,7 +5,7 @@ module.exports = function () {
       browser: "chrome",
     });
 
-    $.gulp.watch("less/**/*.less", $.gulp.series("less"));
+    $.gulp.watch("less/**/*.less", $.gulp.series("less"))
     $.gulp.watch("*.html", $.gulp.series("html"));
     $.gulp.watch("js/**/*.js", $.gulp.series("scripts"));
     $.gulp.watch("css/**/*.css", $.gulp.series("css"));

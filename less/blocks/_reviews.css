@@ -1,7 +1,6 @@
 .reviews {
   background-color: #fff;
   padding-top: 4.5rem;
-  padding-bottom: 4.5rem;
 }
 .reviews__title {
   font-family: 'lobster';
@@ -14,21 +13,11 @@
     text-align: left;
   }
 }
-.reviews__items {
-  display: flex;
-  align-items: flex-start;
-  gap: 3rem 2rem;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-@media (max-width: 1199px) {
-  .reviews__items {
-    justify-content: center;
-  }
-}
 .reviews__item {
   display: flex;
+  margin: auto;
   max-width: 55.5rem;
+  padding: 2rem 0 4.5rem;
 }
 @media (max-width: 568px) {
   .reviews__item {
@@ -39,4 +28,9 @@
   .reviews__item {
     align-items: center;
   }
+}
+.reviews__wrapper {
+  max-width: 768px;
+  margin: 0 auto;
+  position: relative;
 }

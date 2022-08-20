@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dream On Weels - Твой мир для новых свершений</title>
     <script src="https://kit.fontawesome.com/b36538316f.js" defer></script>
+    <script src="./js/libs/jquery/jquery.min.js" defer></script>
+    <script src="./js/libs/libs.min.js" defer></script>
     <script src="./js/all.min.js" defer></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -63,7 +65,7 @@
         </div>
         <section class="about" id="about">
           <div class="container about__inner">
-            <div class="about__content about-content">
+            <div class="about__content">
               <h2 class="about-content__title caption">О нас</h2>
               <p class="about-content__text">Наша команда вдохновлена разработкой новых решений для создания автомобиля мечты. Твоего автомобиля мечты! Автотюнинг и ремонт являются неотъемлемой частью нашей деятельности! Мы создаем детали для тюнинга, делая автомашины ярче и не похожими на машины других автовладельцев!</p>
 
@@ -143,42 +145,64 @@
         <section class="reviews" id="reviews">
           <div class="container">
             <h2 class="reviews__title caption">Наши отзывы</h2>
-            <div class="reviews__items">
-              <div class="reviews__item review">
-                <div class="review__pic">
-                  <img class="review__avatar" src="./img/reviews/pic-1.png" alt="avatar icon" />
+            <div class="reviews__wrapper">
+              <div class="reviews__items slick" data-slider="slick">
+                <div class="slick__item">
+                  <div class="reviews__item review">
+                    <div class="review__pic">
+                      <img class="review__avatar" src="./img/reviews/pic-1.png" alt="avatar icon" />
+                    </div>
+                    <blockquote class="review__quote">
+                      <p class="review__text">Хочется поблагодарить команду "Dream on Wheels" с успешно выполненной работой! Мы получили за короткий срок и вправду машину мечты. Автомобиль, что пришел в тюнинговый сервис, был преображен до неузнаваемости! Наша машина теперь имеет возможность участвовать в гонках! Спасибо!</p>
+                      <cite class="review__author">"Helmet & Shadows"</cite>
+                    </blockquote>
+                  </div>
                 </div>
-                <blockquote class="review__quote">
-                  <p class="review__text">Хочется поблагодарить команду "Dream on Wheels" с успешно выполненной работой! Мы получили за короткий срок и вправду машину мечты. Автомобиль, что пришел в тюнинговый сервис, был преображен до неузнаваемости! Наша машина теперь имеет возможность участвовать в гонках! Спасибо!</p>
-                  <cite class="review__author">"Helmet & Shadows"</cite>
-                </blockquote>
+                <div class="slick__item">
+                  <div class="reviews__item review">
+                    <div class="review__pic">
+                      <img class="review__avatar" src="./img/reviews/pic-2.png" alt="avatar icon" />
+                    </div>
+                    <blockquote class="review__quote">
+                      <p class="review__text">Команда "Dream On Wheels" помогла осуществить нашу мечту. Благодаря ей мы смогли поучаствовать в заезде в рамках чемпионата по гонкам "Great Race Series of Racers"!</p>
+                      <cite class="review__author">"World Academy Racers"</cite>
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="slick__item">
+                  <div class="reviews__item review">
+                    <div class="review__pic">
+                      <img class="review__avatar" src="./img/reviews/pic-3.png" alt="avatar icon" />
+                    </div>
+                    <blockquote class="review__quote">
+                      <p class="review__text">Спасибо за успешно выполненную работу! Постоянство и упорство. Вот с чем приходится сталкиваться чемпионам! Команда "Dream On Wheels" как никто знает суть этих слов! Спасибо, не раз еще обратимся к таким профессионалам!</p>
+                      <cite class="review__author">"World & Steel Wheels"</cite>
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="slick__item">
+                  <div class="reviews__item review">
+                    <div class="review__pic">
+                      <img class="review__avatar" src="./img/reviews/pic-4.png" alt="avatar icon" />
+                    </div>
+                    <blockquote class="review__quote">
+                      <p class="review__text">Спасибо команде "Dream On Wheels" за настоящий успех! Мы привезли в тюнинг-центр наше авто Dodge Challenger, который участвовал в нескольких гонках подряд, и машина была не в состоянии продолжать. Но благодаря реставрации и ремонту машина стала как новая!</p>
+                      <cite class="review__author">"Racers Gold"</cite>
+                    </blockquote>
+                  </div>
+                </div>
               </div>
-              <div class="reviews__item review">
-                <div class="review__pic">
-                  <img class="review__avatar" src="./img/reviews/pic-2.png" alt="avatar icon" />
-                </div>
-                <blockquote class="review__quote">
-                  <p class="review__text">Команда "Dream On Wheels" помогла осуществить нашу мечту. Благодаря ей мы смогли поучаствовать в заезде в рамках чемпионата по гонкам "Great Race Series of Racers"!</p>
-                  <cite class="review__author">"World Academy Racers"</cite>
-                </blockquote>
-              </div>
-              <div class="reviews__item review">
-                <div class="review__pic">
-                  <img class="review__avatar" src="./img/reviews/pic-3.png" alt="avatar icon" />
-                </div>
-                <blockquote class="review__quote">
-                  <p class="review__text">Спасибо за успешно выполненную работу! Постоянство и упорство. Вот с чем приходится сталкиваться чемпионам! Команда "Dream On Wheels" как никто знает суть этих слов! Спасибо, не раз еще обратимся к таким профессионалам!</p>
-                  <cite class="review__author">"World & Steel Wheels"</cite>
-                </blockquote>
-              </div>
-              <div class="reviews__item review">
-                <div class="review__pic">
-                  <img class="review__avatar" src="./img/reviews/pic-4.png" alt="avatar icon" />
-                </div>
-                <blockquote class="review__quote">
-                  <p class="review__text">Спасибо команде "Dream On Wheels" за настоящий успех! Мы привезли в тюнинг-центр наше авто Dodge Challenger, который участвовал в нескольких гонках подряд, и машина была не в состоянии продолжать. Но благодаря реставрации и ремонту машина стала как новая!</p>
-                  <cite class="review__author">"Racers Gold"</cite>
-                </blockquote>
+              <div class="slick__footer">
+                <button type="button" class="slickPrev slick-prev">
+                  <svg class="slick__arrow-icon slick__arrow-left">
+                    <use xlink:href="./img/sprite/symbol/sprite.svg#arrow-left" />
+                  </svg>
+                </button>
+                <button type="button" class="slickNext slick-next">
+                  <svg class="slick__arrow-icon slick__arrow-right">
+                    <use xlink:href="./img/sprite/symbol/sprite.svg#arrow-left" />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>

@@ -1,9 +1,0 @@
-.contacts-info__feedback {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-}
-.contacts-info__socials {
-  display: flex;
-  margin-bottom: 2.5rem;
-}

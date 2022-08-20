@@ -1,6 +1,3 @@
 module.exports = function () {
-  $.gulp.task(
-    "build",
-    $.gulp.series("clean", "copy", "less", "scripts", "css", "font", "images", "svg")
-  );
+  $.gulp.task("build", $.gulp.series("clean", "copy", "less", "scripts", "jslibs", "jquerylib", "css", "font", "images", "svg"))
 };

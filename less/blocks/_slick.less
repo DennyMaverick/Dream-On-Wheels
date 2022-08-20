@@ -1,0 +1,71 @@
+@import "_vars";
+
+.slick {
+  &-dots {
+    li {
+      button {
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        background-color: rgba(255, 69, 0, 0.7);
+        &::before {
+          content: "";
+        }
+      }
+    }
+    li.slick-active {
+      button {
+        background-color: rgba(255, 69, 0);
+      }
+    }
+  }
+  &__arrow-icon {
+    transition: all 0.3s ease-in;
+    stroke-width: .1px;
+    stroke: rgb(195, 18, 18);
+    fill: rgb(225, 145, 17);
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    button:hover .slick__arrow-icon {
+      stroke: orangered;
+      fill: orangered;
+    }
+  }
+  &__arrow-left,
+  &__arrow-right {
+    width: 32px;
+    height: 32px;
+    @media @mobile {
+      display: none;
+    }
+  }
+  &__arrow-right {
+    transform: rotate(180deg);
+  }
+  &-next::before {
+    content: "";
+  }
+  &-prev::before {
+    content: "";
+  }
+  &-prev {
+    left: 0;
+    @media @tablet {
+      left: 25px;
+    }
+  }
+  &-next {
+    right: 0;
+    @media @tablet {
+      right: 25px;
+    }
+  }
+}
