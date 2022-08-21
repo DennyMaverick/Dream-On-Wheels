@@ -1,16 +1,19 @@
-@import './_vars';
+@import "./_vars";
 
 .about-content {
   &__text {
     font-size: 2rem;
     line-height: 2.4rem;
     color: @orange;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
     & + & {
       margin-top: 2rem;
     }
   }
   &__title {
-    font-family: 'lobster';
+    font-family: "lobster";
     color: @black;
     text-align: left;
     margin-bottom: 6rem;

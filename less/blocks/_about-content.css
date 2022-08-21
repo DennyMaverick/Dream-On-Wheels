@@ -1,0 +1,17 @@
+.about-content__text {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #2b2b2b;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+.about-content__text + .about-content__text {
+  margin-top: 2rem;
+}
+.about-content__title {
+  font-family: "lobster";
+  color: #2b2b2b;
+  text-align: left;
+  margin-bottom: 6rem;
+}
