@@ -363,7 +363,7 @@ body {
   font-family: 'lobster';
   text-align: center;
   margin-bottom: 6rem;
-  color: #010101;
+  color: #2b2b2b;
 }
 @media (max-width: 1199px) {
   .advantage__title {
@@ -573,7 +573,7 @@ body {
 .advantage-item__text {
   font-size: 2rem;
   line-height: 2.4rem;
-  color: indigo;
+  color: #2b2b2b;
   max-width: 52.8rem;
 }
 .container {
@@ -662,7 +662,7 @@ body {
   font-size: 6rem;
   line-height: 0.8;
   text-shadow: 1px 1px 10px #ff5722;
-  color: #010101;
+  color: #2b2b2b;
   font-weight: 400;
   margin-bottom: 4rem;
 }
@@ -686,7 +686,7 @@ body {
 .list-benefits__item {
   position: relative;
   font-size: 2rem;
-  text-shadow: 0px 1px 0px rgba(1, 1, 1, 0.3);
+  text-shadow: 0px 1px 0px rgba(43, 43, 43, 0.3);
   color: #fff;
   margin-left: 3.5rem;
 }
@@ -763,14 +763,19 @@ body {
 .about-content__text {
   font-size: 2rem;
   line-height: 2.4rem;
-  color: indigo;
+  color: #2b2b2b;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 .about-content__text + .about-content__text {
   margin-top: 2rem;
 }
 .about-content__title {
-  font-family: 'lobster';
-  color: #010101;
+  font-family: "lobster";
+  color: #2b2b2b;
   text-align: left;
   margin-bottom: 6rem;
 }
@@ -781,7 +786,7 @@ body {
 }
 .projects__title {
   font-family: "lobster";
-  color: #010101;
+  color: #2b2b2b;
   text-align: center;
   margin-bottom: 6rem;
 }
@@ -836,13 +841,13 @@ body {
   font-size: 2.4rem;
   line-height: 2.4rem;
   font-weight: 400;
-  color: #010101;
+  color: #2b2b2b;
   margin-bottom: 1.5rem;
 }
 .projects-item__text {
   font-size: 2rem;
   line-height: 2.4rem;
-  color: indigo;
+  color: #2b2b2b;
 }
 .reviews {
   background-color: #fff;
@@ -850,7 +855,7 @@ body {
 }
 .reviews__title {
   font-family: 'lobster';
-  color: #010101;
+  color: #2b2b2b;
   text-align: center;
   margin-bottom: 6rem;
 }
@@ -947,7 +952,7 @@ body {
 }
 .offer__title {
   font-family: 'lobster';
-  color: #010101;
+  color: #2b2b2b;
   text-align: center;
   margin-bottom: 6rem;
 }
