@@ -1,4 +1,5 @@
 module.exports = [
+  "./gulp/tasks/server",
   "./gulp/tasks/less",
   "./gulp/tasks/font",
   // './gulp/tasks/sass',
@@ -10,7 +11,6 @@ module.exports = [
   "./gulp/tasks/allimg",
   "./gulp/tasks/images",
   "./gulp/tasks/svg",
-  "./gulp/tasks/serve",
   "./gulp/tasks/copy",
   "./gulp/tasks/clean",
   "./gulp/tasks/build",
